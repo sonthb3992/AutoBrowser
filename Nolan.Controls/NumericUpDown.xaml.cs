@@ -91,11 +91,7 @@ namespace Nolan.Controls
             InitializeComponent();
         }
 
-        private void NumericUpDown_Loaded(object sender, RoutedEventArgs e)
-        {
-            this.originalBorderBrush = this.BorderBrush;
-        }
-
+        
         //This method change the border of this control to InvalidBorderBrush whenever an invalid value is entered.
         private void TxtNum_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -113,7 +109,7 @@ namespace Nolan.Controls
             {
                 this.BorderBrush = this.InvalidBorderBrush;
                 return;
-            }
+            } 
 
             //If the text entered is valid then restore the border brush
             this.BorderBrush = this.originalBorderBrush;
