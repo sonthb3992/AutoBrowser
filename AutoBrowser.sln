@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nolan.Hook", "Nolan.Hook\Nolan.Hook.csproj", "{92E6CD1E-CCF0-4C99-81CF-D87B4F40816D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nolan.AutoBrowser", "Nolan.AutoBrowser\Nolan.AutoBrowser.csproj", "{8870B874-7BE2-495E-A306-48EDC27333D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nolan.Controls", "Nolan.Controls\Nolan.Controls.csproj", "{4405F901-5EFF-42FA-9B15-BFFFD612441D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{92E6CD1E-CCF0-4C99-81CF-D87B4F40816D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92E6CD1E-CCF0-4C99-81CF-D87B4F40816D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92E6CD1E-CCF0-4C99-81CF-D87B4F40816D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8870B874-7BE2-495E-A306-48EDC27333D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8870B874-7BE2-495E-A306-48EDC27333D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8870B874-7BE2-495E-A306-48EDC27333D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8870B874-7BE2-495E-A306-48EDC27333D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4405F901-5EFF-42FA-9B15-BFFFD612441D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4405F901-5EFF-42FA-9B15-BFFFD612441D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4405F901-5EFF-42FA-9B15-BFFFD612441D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4405F901-5EFF-42FA-9B15-BFFFD612441D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
