@@ -12,28 +12,31 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Nolan.AutoBrowser
+namespace Nolan.AutoBrowser.Forms
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Web_Navigate.xaml
     /// </summary>
-    public partial class MainWindow : Window, INotifyPropertyChanged
+    public partial class Web_Navigate : Window, INotifyPropertyChanged
     {
-
         #region FIELDS
+        private bool _IsUrlValid;
 
         #endregion
 
         #region PROPERTIES
 
-        public MainWindow()
+        public bool IsUrlValid
         {
-            InitializeComponent();
+            get { return _IsUrlValid; }
+            set
+            {
+                if (value != _IsUrlValid) _IsUrlValid = value;
+                OnPropertyChanged();
+            }
         }
-
         #endregion
 
         #region NAVIGATION PROPERTIES
@@ -41,20 +44,30 @@ namespace Nolan.AutoBrowser
         #endregion
 
         #region CONSTRUCTOR
-
+        public Web_Navigate()
+        {
+            InitializeComponent();
+        }
         #endregion
 
         #region METHODS
-
-        private void Button_WebNavigate_Click(object sender, RoutedEventArgs e)
+        private void UrlTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Forms.Web_Navigate form = new Forms.Web_Navigate();
-            var frmResult = form.ShowDialog();
-            if (frmResult.HasValue && frmResult.Value == true)
-            {
-            }
+            Uri uriResult;
+            this.IsUrlValid = Uri.TryCreate(this.UrlTextBox.Text, UriKind.Absolute, out uriResult)
+                && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
         }
         #endregion
+
+
+
+
+
+
+
+
+
+
 
 
         #region INotifyPropertyChanged
@@ -63,14 +76,12 @@ namespace Nolan.AutoBrowser
         /// <summary>
         /// Helper method
         /// </summary>
-        private void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        private void OnPropertyChanged([CallerMemberName] String propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-
         #endregion
 
-        
+
     }
 }

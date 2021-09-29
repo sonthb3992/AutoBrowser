@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nolan.AutoBrowser", "Nolan.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nolan.Controls", "Nolan.Controls\Nolan.Controls.csproj", "{4405F901-5EFF-42FA-9B15-BFFFD612441D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nolan.AutoClicker", "Nolan.AutoClicker\Nolan.AutoClicker.csproj", "{0FAFFC91-4757-4ED2-A6A8-5F481DF6F32D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4405F901-5EFF-42FA-9B15-BFFFD612441D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4405F901-5EFF-42FA-9B15-BFFFD612441D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4405F901-5EFF-42FA-9B15-BFFFD612441D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FAFFC91-4757-4ED2-A6A8-5F481DF6F32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAFFC91-4757-4ED2-A6A8-5F481DF6F32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAFFC91-4757-4ED2-A6A8-5F481DF6F32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAFFC91-4757-4ED2-A6A8-5F481DF6F32D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
